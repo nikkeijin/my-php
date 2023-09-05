@@ -36,7 +36,7 @@ function get_template_directory_uri()
 function get_template_part($path)
 {
     global $directory;
-    include("$directory/$path");
+    include("$directory/$path.php");
 }
 
 

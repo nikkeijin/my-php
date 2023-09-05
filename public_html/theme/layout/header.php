@@ -16,7 +16,7 @@
 
 <header>
     <h1 style="text-align: center; color: tomato;">Header</h1>
-    <?php get_template_part('./theme/layout/nav.php'); ?>
+    <?php get_template_part('./theme/layout/nav'); ?>
 </header>
 <hr>
 
