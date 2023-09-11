@@ -1,4 +1,4 @@
-<?php include_once('./config/functions.php'); ?>
+<?php include_once('./src/functions.php'); ?>
 
 <?php
 
