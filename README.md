@@ -22,7 +22,7 @@ The `page_router()` function is responsible for routing requests to the appropri
 
 - `home_url($page_slug = '')`: Generate the URL for the home page or a specific page based on the given slug.
 
-- Example of the esc_url and home_url functions: `<a href="<?= esc_url(home_url('portfolio')); ?>">Portfolio</a>`
+Example of the esc_url and home_url functions: `<a href="<?= esc_url(home_url('portfolio')); ?>">Portfolio</a>`
 
 ### Page Methods
 
