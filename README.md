@@ -85,7 +85,7 @@ Customize your Tailwind CSS configuration by editing the tailwind.config.js file
 ```javascript
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: ["./**/*.{html,js,php}"],
   theme: {
     extend: {},
   },
