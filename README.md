@@ -56,3 +56,61 @@ The docker-compose.yml file includes configurations for Apache, MySQL, and phpMy
 Please note that you can adjust the Docker configurations in the docker-compose.yml and Dockerfile to suit your specific needs.
 
 Happy coding!
+
+# Bonus
+
+## TailwindCSS
+
+Tailwind CSS is a modern and highly efficient utility-first CSS framework that provides a new approach to styling web applications. 
+        
+Utility-First Approach: Tailwind's utility-first approach means that instead of writing custom CSS styles, you compose your designs using a set of pre-defined utility classes.
+
+### Installation
+
+1. Install Tailwind CSS
+
+Use npm to install Tailwind CSS as a development dependency:
+```bash
+npm install -D tailwindcss
+```
+
+Initialize Tailwind CSS configuration:
+```bash
+npx tailwindcss init
+```
+
+2. Configure tailwind.config.js
+
+Customize your Tailwind CSS configuration by editing the tailwind.config.js file. Here's a basic example:
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+Adjust the configuration to meet your project's specific needs.
+
+3. Create Tailwind CSS File
+
+Create a `tailwind.css` file in the `theme/assets/css/` directory. This file will contain Tailwind directives:
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+4. Build and Watch for Changes
+
+Run the following command in your terminal to build Tailwind CSS and watch for changes:
+
+```bash
+npx tailwindcss -i ./theme/assets/css/tailwind.css -o ./theme/assets/css/style.css --watch
+```
+
+This command processes your Tailwind CSS file and outputs the result into a style.css file. The --watch flag ensures that the process stays active, updating the output whenever you make changes to your CSS.
+
+Now you're all set to start using Tailwind CSS in your project! Customize your styles efficiently and create a delightful user experience.
